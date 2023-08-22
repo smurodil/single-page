@@ -1,0 +1,14 @@
+@mixin headingSetting(){
+    line-height: normal;
+    font-weight: 700;
+    color: $black-color;
+}
+
+@mixin btnSetting(){
+    padding: 14px 45px;
+    font-family: 700;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: $white-color;
+    border-radius: 28px;
+}

@@ -1,0 +1,35 @@
+.black__btn{
+    @include btnSetting();
+    background-color: $black-color;
+    &:hover{
+        background-color: $blue-color
+    }
+}
+
+.orange__btn{
+    @include btnSetting();
+    background-color: $brown-color;
+    &:hover{
+        background-color: $orange-color;
+    }
+}
+
+.right__btn{
+    background-color: $black-color;
+    color: $white-color;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    text-align: center;
+    i{
+        margin-top: 23px;
+        transform: rotate(-180deg);
+    }
+    &:last-child{
+        transform: rotate(180deg);
+    }
+    &:hover{
+        background-color: $blue-color;
+        color: $white-color;
+    }
+}

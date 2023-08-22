@@ -1,0 +1,362 @@
+body{
+    overflow-x: hidden;
+    background-color: $white-color;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.hero {
+}
+.hero__container {
+    margin-bottom: 80px;
+    text-align: center;
+}
+.container {
+}
+.hero__title {
+    margin-bottom: 23px;
+}
+.hero__description {
+    max-width: 730px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.services {
+}
+.services__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 163px;
+    justify-content: space-between;
+}
+.container {
+}
+.services__content{
+    display: flex;
+    width: 100%;
+    max-width: 732.09px;
+    justify-content: space-between;
+}
+.left__services {
+    width: 100%;
+    max-width: 354px;
+    background-color: $blue-color;
+    height: 364px;
+    padding: 24px;
+    border-radius: 8px;
+    .services__description{
+        margin-top: 94px;
+    }
+}
+.services__img {
+    margin-left: auto;
+}
+.services__description {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal; 
+}
+.central__services {
+}
+.central__services__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 354px;
+}
+.ui__ux__design {
+    width: 164px;
+    height: 182px;
+    padding: 24px;
+    background-color: $orange-color;
+    border-radius: 8px;
+    margin-right: 25px;
+    .services__description{
+        margin-top: 40px;
+    }
+}
+.apps {
+    width: 164px;
+    height: 182px;
+    padding: 24px;
+    background-color: $pink-color;
+    border-radius: 8px;
+    .services__description{
+        margin-top: 40px;
+    }
+}
+.illustrations {
+    width: 100%;
+    max-width: 354px;
+    background-color: $brown-color;
+    padding: 24px;
+    border-radius: 8px;
+    height: 158px;
+    .services__description{
+        margin-top: 16px;
+    }
+}
+.right__services {
+    width: 100%;
+    max-width: 354px;
+    height: 364px;
+}
+.photography {
+    background-color: $aqua-color;
+    padding: 24px;
+    height: 182px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    .services__description{
+        margin-top: 40px;
+    }
+}
+.motion__graphic {
+    background-color: $purple-color;
+    padding: 24px;
+    height: 158px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    .services__description{
+        margin-top: 16px;
+    }
+}
+
+.about {
+}
+.about__container {
+    margin-bottom: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+}
+.about__img__wrapper {
+}
+.about__content {
+    width: 540px;
+}
+.about__title {
+    margin-bottom: 34px;
+}
+.about__description {
+    margin-bottom: 32px;
+}
+.orange__btn {
+}
+
+.work {
+}
+.work__container {
+    margin-bottom: 88px;
+}
+.container {
+}
+.work__title {
+    margin-bottom: 56px;
+    text-align: center;
+}
+.work__list {
+    display: flex;
+    margin-bottom: 56px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -75%;
+}
+.work__item {
+    margin-right: 30px;
+    &:last-child{
+        margin-right: 0;
+    }
+    img{
+        border-radius: 8px;
+    }
+}
+
+.work__btn__wrapper {
+    justify-content: center;
+    display: flex;
+}
+.right__btn {
+    &:first-child{
+        margin-right: 16px;
+    }
+}
+
+.contact {
+}
+.contact__container {
+    background-color: $black-color;
+    padding: 81px 95px 80px 65px;
+    margin-bottom: 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+}
+.contact__content {
+    width: 100%;
+    max-width: 540px;
+}
+.contact__title {
+    color: $white-color;
+    margin-bottom: 25px;
+}
+.contact__description {
+    color: $white-color;
+    font-size: 1.8rem;
+}
+.orange__btn {
+}
+
+@media screen and (max-width: 1233px){
+    .work-3{
+        margin-left: auto;
+        margin-right: -75%;
+    }
+    .work-1{
+        display: none;
+    }
+    .work-2{
+        display: none;
+    }
+    .work-4{
+        display: none;
+    }
+    .work-5{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1033px){
+    .services__container{
+        flex-direction: column;
+    }
+    .right__services{
+        display: flex;
+        width: 100%;
+        max-width: 750px;
+        align-items: center;
+        justify-content: space-between;
+        .photography{
+            width: 100%;
+            max-width: 354px;
+        }
+        .motion__graphic{
+            width: 100%;
+            max-width: 354px;
+            height: 182px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px){
+    .contact__container{
+        flex-direction: column;
+        text-align: center;
+        .contact__description{
+            margin-bottom: 32px;
+        }
+    }
+    .work-3{
+        margin-right: -50%;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 877px){
+    .about__container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .about__img__wrapper{
+            margin-bottom: 64px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .left__services{
+        width: 100%;
+        max-width: 333px;
+    }
+    .ui__ux__design{
+        width: 100%;
+        max-width: 155px;
+        height: 182px;
+    }
+    .apps{
+        width: 100%;
+        max-width: 155px;
+        height: 182px;
+    }
+    .illustrations{
+        width: 100%;
+        max-width: 333px;
+    }
+    .right__services{
+        width: 100%;
+        max-width: 690px;
+    }
+    .photography{
+        width: 100%;
+        max-width: 333px;
+    }
+    .motion__graphic{
+        width: 100%;
+        max-width: 333px;
+    }
+}
+
+@media screen and (max-width: 672px){
+    .work-3{
+        margin-left: auto;
+        margin-right: -35%;
+    }
+}
+
+@media screen and (max-width: 572px){
+    .work-3{
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .about__img__wrapper{
+        width: 300px;
+        height: 300px;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .about__content{
+        width: 300px;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .services__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right__services{
+        flex-direction: column;
+    }
+    .left__services{
+        margin-bottom: 24px;
+    }
+    .illustrations{
+        margin-bottom: 24px;
+    }
+}
